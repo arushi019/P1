@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>Aarushi Website | Contact Me</title>
+		<style>
+		body {
+		
+		}
+		h1 {
+		color:blue;
+		border-bottom: 1px solid black;
+		}
+		p {
+		color:blue;
+		font-size:15px;
+		font-family:Helvetica;
+		}
+		#map {
+        height: 265px;
+        width: 75%;
+       }
+    </style>
+		</style>
+	</head>
+	
+	<body>
+		<div id="outerBody" style="width:1000px;height:768px;margin:0 Auto;">
+			<div id="header" style="height:200px;background:url('Images/Contactme-1.jpg');">
+				
+			</div>
+			<div id="bodyContainer">
+				<div id="leftSection" style="float:left;width:25%;height:500px;background-image:url('Images/Background-2.jpg');">
+					<ul style="list-style:none; margin-top:100px;">
+						<li><a href="index.html">All ABOUT ME</a></li>
+						<hr>
+						<li><a href="myhobbies.html">MY HOBBIES</a></li>
+						<hr>
+						<li><a href="https://aarushi98blog.wordpress.com/">MY BLOGS</a></li>
+						<hr>
+						<li><a href="myprojects.html">MY PROJECTS</a></li>
+						<hr>
+						<li><a href="contactme.html">CONTACT ME</a></li>
+						<hr>
+					</ul>
+				
+				</div>
+				<div id="rightSection" style="float:right;width:70%;height:500px;margin-left:10px;">
+					<h1>Contact Me</h1>
+					<p>
+					<img src="Images/Email.png" alt="Email" style="width:20px;height:20px;">
+					Email : aarushi16216@iiitd.ac.in
+					<br>
+					<br>
+					<img src="Images/mobilephone.png" alt="Mobile Phone" style="width:20px;height:20px;">
+					Phone : +91-8860163758
+					<br>
+					<br>
+					<img src="Images/facebook.png" alt="Facebook" style="width:20px;height:20px;">
+					facebook : https://www.facebook.com/AarushiAg?ref=br_rs
+					<br>
+					<br>
+					<img src="Images/GoogleMaps.png" alt="GoogleMaps" style="width:20px;height:20px;">
+					Address : IIIT Delhi,India
+					<div id="map"></div>
+					<script>
+					  function initMap() {
+						var uluru = {lat: 28.546323, lng: 77.2732786};
+						var map = new google.maps.Map(document.getElementById('map'), {
+						  zoom: 15,
+						  center: uluru
+						});
+						var marker = new google.maps.Marker({
+						  position: uluru,
+						  map: map
+						});
+					  }
+					</script>
+					<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE6ZCNdCVvN8khVLGXc28IKK5f2WPGofA&callback=initMap">
+					</script>
+					</p>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+	
+</html>
